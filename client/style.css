@@ -1,0 +1,57 @@
+/* simple CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.flex-container {
+  margin: 25vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  border: 4px orangered solid;
+  width: 80vw;
+  height: 50vh;
+  max-width: 65rem;
+  font-size: 1.6rem;
+  box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.38);
+}
+
+button {
+  margin: 1rem;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  50% {
+    transform: translateY(7rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.fetchResponse {
+  color: blue;
+  animation: bounce 2s infinite ease-in-out;
+}
