@@ -16,6 +16,7 @@ textarea {
   font: inherit;
 }
 
+/* containers */
 .flex-container {
   margin: 25vh auto;
   display: flex;
@@ -33,10 +34,17 @@ textarea {
   -moz-box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.38);
 }
 
+/* general styling */
 button {
   margin: 1rem;
 }
 
+.fetchResponse {
+  color: blue;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+/* animations */
 @keyframes bounce {
   0% {
     transform: translateY(0rem);
@@ -49,9 +57,4 @@ button {
   100% {
     transform: translateY(0rem);
   }
-}
-
-.fetchResponse {
-  color: blue;
-  animation: bounce 2s infinite ease-in-out;
 }
